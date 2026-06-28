@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Generation Gym Hawal | Premium Community Fitness Center</title>
+    <meta name="description" content="Join Fitness Generation Gym Hawal, a welcoming, beginner-friendly fitness community. Enjoy affordable memberships, modern equipment, and a dedicated cardio area in a clean, professional environment.">
+    <meta name="keywords" content="Gym Hawal, Fitness Generation, Srinagar Gym, Best Gym in Hawal, Affordable Gym, Modern Equipment, Fitness Center, Personal Training">
+    <meta name="theme-color" content="#121212">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Fitness Generation Gym Hawal | Premium Community Fitness Center">
+    <meta property="og:description" content="Welcoming everyone from beginners to experienced athletes. Experience modern facilities, supportive trainers, and an affordable path to your fitness goals.">
+    <meta property="og:image" content="assets/images/hero-bg.jpg">
+    <meta property="og:url" content="https://www.fitnessgenerationgymhawal.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fitness Generation Gym Hawal">
+    <meta name="twitter:description" content="A welcoming, beginner-friendly fitness community with modern equipment and affordable memberships.">
+    <meta name="twitter:image" content="assets/images/hero-bg.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Fonts: Oswald for strong industrial headings, Inter for clean modern body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Fitness Generation Gym Hawal",
+      "image": "assets/images/logo.png",
+      "@id": "",
+      "url": "https://www.fitnessgenerationgymhawal.com",
+      "telephone": "+917006688165",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hawal Chowk, Opposite Bajaj Service Centre",
+        "addressLocality": "Srinagar",
+        "addressRegion": "Jammu & Kashmir",
+        "postalCode": "190011",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.1166,
+        "longitude": 74.8078
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "06:00",
+        "closes": "22:00"
+      },
+      "priceRange": "$"
+    }
+    </script>
+</head>
+<body>
+    <!-- Luxury Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h1 class="loader-text">FITNESS<br>GENERATION</h1>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="Fitness Generation Logo" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNjAiPjx0ZXh0IHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9Ik9zd2FsZCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPkZJVE5FU1MgR0VOUjwvdGV4dD48L3N2Zz4='">
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="magnetic-btn">About</a>
+                <a href="#facilities" class="magnetic-btn">Facilities</a>
+                <a href="#memberships" class="magnetic-btn">Memberships</a>
+                <a href="#reviews" class="magnetic-btn">Reviews</a>
+            </div>
+            <a href="#contact" class="btn-primary magnetic-btn">Join Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ri-menu-4-line"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu">
+            <div class="mobile-links">
+                <a href="#about">About</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#memberships">Memberships</a>
+                <a href="#trainers">Trainers</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section (Cinematic Full Screen) -->
+    <section class="hero" id="home">
+        <div class="hero-bg-parallax">
+            <img src="assets/images/hero-bg.jpg" alt="Gym Background" class="hero-bg-img" onerror="this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">FITNESS</span>
+                    <span class="title-line highlight-text">GENERATION</span>
+                    <span class="title-line small-text">GYM HAWAL</span>
+                </h1>
+                <p class="hero-subtitle">Build Strength. Build Discipline. Build Your Future.</p>
+                <div class="hero-actions">
+                    <a href="#memberships" class="btn-primary magnetic-btn">Join Today</a>
+                    <a href="#contact" class="btn-secondary magnetic-btn">Free Trial</a>
+                    <a href="https://wa.me/917006688165" target="_blank" rel="noopener noreferrer" class="btn-whatsapp magnetic-btn">
+                        <i class="ri-whatsapp-line"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-athlete">
+                <img src="assets/images/hero-athlete.png" alt="Athlete" class="athlete-img" onerror="this.src='https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop&bg=transparent'">
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Statistics (Floating Glass Cards) -->
+    <section class="statistics" id="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-star-smile-fill"></i></div>
+                    <h3 class="stat-number"><span class="counter" data-target="4.2">0</span><span class="accent">★</span></h3>
+                    <p class="stat-label">Google Rating</p>
+                </div>
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-message-3-fill"></i></div>
+                    <h3 class="stat-number"><span class="counter" data-target="69">0</span><span class="accent">+</span></h3>
+                    <p class="stat-label">Google Reviews</p>
+                </div>
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-money-dollar-circle-fill"></i></div>
+                    <h3 class="stat-text">Affordable</h3>
+                    <p class="stat-label">Membership</p>
+                </div>
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-run-fill"></i></div>
+                    <h3 class="stat-text">Dedicated</h3>
+                    <p class="stat-label">Cardio Zone</p>
+                </div>
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-sword-fill"></i></div>
+                    <h3 class="stat-text">Modern</h3>
+                    <p class="stat-label">Equipment</p>
+                </div>
+                <div class="stat-card glass-card tilt-card">
+                    <div class="stat-icon"><i class="ri-team-fill"></i></div>
+                    <h3 class="stat-text">Friendly</h3>
+                    <p class="stat-label">Trainers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About (Split Layout) -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-split">
+                <div class="about-image-wrapper">
+                    <div class="about-image glass-card reveal-left">
+                        <img src="assets/images/gallery1.jpg" alt="Fitness Generation Gym Interior" onerror="this.src='https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1374&auto=format&fit=crop'">
+                        <div class="experience-badge">
+                            <span class="badge-number">100%</span>
+                            <span class="badge-text">Beginner<br>Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <div class="section-heading">
+                        <h4 class="section-subtitle">WELCOME TO YOUR NEW HOME</h4>
+                        <h2 class="section-title">A Gym For <span class="highlight-text">Everyone</span></h2>
+                    </div>
+                    <p class="about-text">
+                        Fitness Generation Gym is a trusted neighborhood fitness center in Hawal, Srinagar. We believe that a high-quality fitness experience shouldn't come with a luxury price tag.
+                    </p>
+                    <p class="about-text">
+                        Whether you are stepping into a gym for the first time or you are an experienced athlete pushing your limits, our environment is built for you. We maintain a clean, highly ventilated space with modern, professional-grade equipment and a dedicated cardio area.
+                    </p>
+                    <p class="about-text">
+                        Our strong local community and supportive trainers ensure you always have the guidance and motivation needed to achieve your goals affordably.
+                    </p>
+                    
+                    <ul class="about-features">
+                        <li><i class="ri-check-line"></i> Comfortable for beginners and professionals</li>
+                        <li><i class="ri-check-line"></i> Clean and ventilated workout space</li>
+                        <li><i class="ri-check-line"></i> Strong local fitness community</li>
+                    </ul>
+                    
+                    <a href="#memberships" class="btn-primary mt-4 magnetic-btn">View Memberships</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Bento Grid) -->
+    <section class="why-choose-us section-padding bg-dark" id="features">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">THE FITNESS GENERATION ADVANTAGE</h4>
+                <h2 class="section-title">Why Train <span class="highlight-text">With Us</span></h2>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-item bento-large glass-card tilt-card reveal-up">
+                    <div class="bento-content">
+                        <i class="ri-tools-fill bento-icon"></i>
+                        <h3>Modern Equipment</h3>
+                        <p>Train with professional-grade, well-maintained machinery designed to target every muscle group effectively and safely.</p>
+                    </div>
+                    <div class="bento-bg" style="background-image: url('assets/images/equipment1.jpg')"></div>
+                </div>
+                
+                <div class="bento-item bento-medium glass-card tilt-card reveal-up delay-1">
+                    <div class="bento-content">
+                        <i class="ri-run-line bento-icon"></i>
+                        <h3>Separate Cardio Space</h3>
+                        <p>A dedicated, spacious zone for treadmills, ellipticals, and bikes to boost your endurance.</p>
+                    </div>
+                </div>
+                
+                <div class="bento-item bento-medium glass-card tilt-card reveal-up delay-2">
+                    <div class="bento-content">
+                        <i class="ri-wallet-3-fill bento-icon"></i>
+                        <h3>Affordable Membership</h3>
+                        <p>Premium fitness experience without the luxury price tag. Accessible fitness for our community.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item bento-small glass-card tilt-card reveal-up">
+                    <i class="ri-shield-user-fill bento-icon"></i>
+                    <h4>Beginner Friendly</h4>
+                </div>
+                
+                <div class="bento-item bento-small glass-card tilt-card reveal-up delay-1">
+                    <i class="ri-windy-line bento-icon"></i>
+                    <h4>Clean & Ventilated</h4>
+                </div>
+
+                <div class="bento-item bento-wide glass-card tilt-card reveal-up delay-2">
+                    <div class="bento-content flex-row">
+                        <div class="text-content">
+                            <h3>Professional Guidance</h3>
+                            <p>Our friendly trainers are always on the floor, ready to spot you, correct your form, and guide you through your strength and cardio training routines.</p>
+                        </div>
+                        <i class="ri-group-fill bento-icon large-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment (Interactive Masonry Gallery) -->
+    <section class="equipment section-padding" id="facilities">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">OUR FACILITIES</h4>
+                <h2 class="section-title">Premium <span class="highlight-text">Equipment</span></h2>
+                <p class="section-desc">A sneak peek into our well-maintained, professional-grade training floor.</p>
+            </div>
+            
+            <div class="masonry-gallery">
+                <!-- Gallery Items -->
+                <div class="masonry-item gallery-hover reveal-up">
+                    <img src="assets/images/equipment2.jpg" alt="Dumbbell Rack" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop'">
+                    <div class="gallery-overlay">
+                        <i class="ri-zoom-in-line"></i>
+                        <span>Free Weights</span>
+                    </div>
+                </div>
+                <div class="masonry-item gallery-hover reveal-up delay-1">
+                    <img src="assets/images/equipment3.jpg" alt="Cardio Section" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop'">
+                    <div class="gallery-overlay">
+                        <i class="ri-zoom-in-line"></i>
+                        <span>Cardio Zone</span>
+                    </div>
+                </div>
+                <div class="masonry-item gallery-hover reveal-up delay-2">
+                    <img src="assets/images/equipment4.jpg" alt="Bench Press" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1469&auto=format&fit=crop'">
+                    <div class="gallery-overlay">
+                        <i class="ri-zoom-in-line"></i>
+                        <span>Strength Training</span>
+                    </div>
+                </div>
+                <div class="masonry-item gallery-hover reveal-up">
+                    <img src="assets/images/equipment5.jpg" alt="Leg Press Machine" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1536922246289-88c42f957773?q=80&w=1504&auto=format&fit=crop'">
+                    <div class="gallery-overlay">
+                        <i class="ri-zoom-in-line"></i>
+                        <span>Machine Weights</span>
+                    </div>
+                </div>
+                <div class="masonry-item gallery-hover reveal-up delay-1">
+                    <img src="assets/images/equipment6.jpg" alt="Squat Rack" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=1469&auto=format&fit=crop'">
+                    <div class="gallery-overlay">
+                        <i class="ri-zoom-in-line"></i>
+                        <span>Power Racks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fullscreen Image Modal -->
+        <div class="image-modal" id="imageModal">
+            <span class="close-modal"><i class="ri-close-line"></i></span>
+            <img class="modal-content" id="modalImg">
+            <div id="modalCaption"></div>
+        </div>
+    </section>
+
+    <!-- Membership (Premium pricing cards) -->
+    <section class="membership section-padding bg-dark" id="memberships">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">JOIN THE COMMUNITY</h4>
+                <h2 class="section-title">Affordable <span class="highlight-text">Memberships</span></h2>
+                <p class="section-desc">Transparent pricing. No hidden fees. Start your fitness journey today.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card glass-card reveal-up">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">699</span>
+                            <span class="period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="ri-checkbox-circle-fill"></i> Access to main gym floor</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Free weights & machines</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> General trainer guidance</li>
+                        <li class="disabled"><i class="ri-close-circle-line"></i> Dedicated Cardio Zone</li>
+                        <li class="disabled"><i class="ri-close-circle-line"></i> Personalized Diet Plan</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline magnetic-btn w-100">Join Starter</a>
+                </div>
+                
+                <!-- Standard Plan (Popular) -->
+                <div class="pricing-card glass-card popular reveal-up delay-1">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Standard</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">999</span>
+                            <span class="period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="ri-checkbox-circle-fill"></i> Access to main gym floor</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Free weights & machines</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Dedicated Cardio Zone</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> General trainer guidance</li>
+                        <li class="disabled"><i class="ri-close-circle-line"></i> Personalized Diet Plan</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary magnetic-btn w-100">Join Standard</a>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="pricing-card glass-card reveal-up delay-2">
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">₹</span>
+                            <span class="amount">2499</span>
+                            <span class="period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="ri-checkbox-circle-fill"></i> All Standard Features</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> 1-on-1 Personal Training</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Customized Workout Routine</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Personalized Diet Plan</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Weekly Progress Tracking</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline magnetic-btn w-100">Join Premium</a>
+                </div>
+            </div>
+            
+            <p class="text-center mt-4 text-muted reveal-up">* Prices are indicative. Please contact us or visit the gym for current offers and long-term membership discounts.</p>
+        </div>
+    </section>
+
+    <!-- Trainers (Horizontal Slider) -->
+    <section class="trainers section-padding" id="trainers">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">EXPERT GUIDANCE</h4>
+                <h2 class="section-title">Meet Our <span class="highlight-text">Trainers</span></h2>
+            </div>
+            
+            <div class="swiper trainers-slider reveal-up">
+                <div class="swiper-wrapper">
+                    <!-- Trainer 1 -->
+                    <div class="swiper-slide">
+                        <div class="trainer-card">
+                            <div class="trainer-img-wrapper">
+                                <img src="assets/images/trainer1.jpg" alt="Head Trainer" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1374&auto=format&fit=crop'">
+                                <div class="trainer-socials">
+                                    <a href="#"><i class="ri-instagram-line"></i></a>
+                                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="trainer-info">
+                                <h3>Umar Bhat</h3>
+                                <p class="specialty">Head Coach / Strength</p>
+                                <p class="philosophy">"Consistency beats intensity. I focus on building your foundation so you can lift heavier and live healthier."</p>
+                                <div class="experience"><span>8+ Years Experience</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trainer 2 -->
+                    <div class="swiper-slide">
+                        <div class="trainer-card">
+                            <div class="trainer-img-wrapper">
+                                <img src="assets/images/trainer2.jpg" alt="Cardio Specialist" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1374&auto=format&fit=crop'">
+                                <div class="trainer-socials">
+                                    <a href="#"><i class="ri-instagram-line"></i></a>
+                                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="trainer-info">
+                                <h3>Sahil Khan</h3>
+                                <p class="specialty">Cardio & Fat Loss</p>
+                                <p class="philosophy">"Endurance is built step by step. My goal is to make cardio engaging and highly effective for fat loss."</p>
+                                <div class="experience"><span>5+ Years Experience</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Trainer 3 -->
+                    <div class="swiper-slide">
+                        <div class="trainer-card">
+                            <div class="trainer-img-wrapper">
+                                <img src="assets/images/trainer3.jpg" alt="Personal Trainer" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop'">
+                                <div class="trainer-socials">
+                                    <a href="#"><i class="ri-instagram-line"></i></a>
+                                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="trainer-info">
+                                <h3>Aadil Dar</h3>
+                                <p class="specialty">Beginner Specialist</p>
+                                <p class="philosophy">"Walking into a gym can be intimidating. I am here to make sure you feel welcomed, safe, and confident."</p>
+                                <div class="experience"><span>4+ Years Experience</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination & Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation (Interactive before/after) -->
+    <section class="transformation section-padding bg-dark" id="transformations">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">REAL RESULTS</h4>
+                <h2 class="section-title">Community <span class="highlight-text">Transformations</span></h2>
+                <p class="section-desc">Drag the slider to see real progress from our dedicated members.</p>
+            </div>
+            
+            <div class="transformation-container reveal-up">
+                <div class="before-after-slider">
+                    <!-- After Image (Background) -->
+                    <div class="img-after">
+                        <img src="assets/images/after1.jpg" alt="After Transformation" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1470&auto=format&fit=crop'">
+                        <span class="label">After (8 Months)</span>
+                    </div>
+                    <!-- Before Image (Foreground overlay) -->
+                    <div class="img-before">
+                        <img src="assets/images/before1.jpg" alt="Before Transformation" class="lazy" onerror="this.src='https://images.unsplash.com/photo-1606902965551-dce093cda6e7?q=80&w=1374&auto=format&fit=crop&grayscale=true'">
+                        <span class="label">Before</span>
+                    </div>
+                    <!-- Slider Control -->
+                    <input type="range" min="0" max="100" value="50" class="slider" id="baSlider" aria-label="Before and After Slider">
+                    <div class="slider-button">
+                        <i class="ri-arrow-left-right-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews (Modern Glass Cards) -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">WHAT THEY SAY</h4>
+                <h2 class="section-title">Google <span class="highlight-text">Reviews</span></h2>
+                <div class="rating-overview">
+                    <span class="rating-score">4.2</span>
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                    <span class="rating-count">Based on 69+ Reviews</span>
+                </div>
+            </div>
+            
+            <div class="swiper reviews-slider reveal-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">S</div>
+                                <div class="reviewer-info">
+                                    <h4>Sahil A.</h4>
+                                    <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                                </div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="google-icon">
+                            </div>
+                            <p class="review-text">"One of the most cost-effective memberships in Hawal without compromising on quality. The equipment is modern and the cardio area is a huge plus."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">M</div>
+                                <div class="reviewer-info">
+                                    <h4>Mehran M.</h4>
+                                    <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                                </div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="google-icon">
+                            </div>
+                            <p class="review-text">"Very comfortable for beginners. I joined two months ago and the trainers were incredibly welcoming. Clean and well-maintained gym."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">I</div>
+                                <div class="reviewer-info">
+                                    <h4>Irfan B.</h4>
+                                    <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                                </div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="google-icon">
+                            </div>
+                            <p class="review-text">"Great positive training experience. The environment is motivating, the space is well-ventilated, and it genuinely feels like a community rather than just a commercial gym."</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card glass-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">D</div>
+                                <div class="reviewer-info">
+                                    <h4>Danish Z.</h4>
+                                    <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i></div>
+                                </div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="google-icon">
+                            </div>
+                            <p class="review-text">"Dedicated cardio area is separated from the weight lifting section which makes it less crowded. Professional guidance is available whenever needed."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location (Map + Information split layout) -->
+    <section class="location section-padding bg-dark" id="location">
+        <div class="container">
+            <div class="location-split">
+                <div class="location-info reveal-left">
+                    <h4 class="section-subtitle">FIND US</h4>
+                    <h2 class="section-title">Visit Our <span class="highlight-text">Gym</span></h2>
+                    
+                    <div class="address-card glass-card">
+                        <div class="contact-item">
+                            <i class="ri-map-pin-2-fill accent-icon"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Fitness Generation Gym<br>Hawal Chowk<br>Opposite Bajaj Service Centre<br>Srinagar, J&K 190011</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons mt-4">
+                        <a href="https://maps.google.com/?q=Fitness+Generation+Gym+Hawal+Srinagar" target="_blank" class="btn-primary magnetic-btn"><i class="ri-direction-fill"></i> Get Directions</a>
+                        <a href="tel:+917006688165" class="btn-outline magnetic-btn"><i class="ri-phone-fill"></i> Call Us</a>
+                        <a href="https://wa.me/917006688165" target="_blank" class="btn-whatsapp magnetic-btn"><i class="ri-whatsapp-fill"></i> Message</a>
+                    </div>
+                </div>
+                
+                <div class="location-map reveal-right glass-card">
+                    <!-- Interactive Google Maps iframe placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d13214.364027786196!2d74.79515915!3d34.10565255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f8e02d665fb%3A0xc6c764ed2e7a0fc8!2sHawal%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fitness Generation Gym Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Animated accordion) -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <div class="section-heading text-center reveal-up">
+                <h4 class="section-subtitle">GOT QUESTIONS?</h4>
+                <h2 class="section-title">Frequently Asked <span class="highlight-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-container reveal-up">
+                <div class="accordion">
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">What are your opening hours?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>We are open Monday to Saturday from 6:00 AM to 10:00 PM, and Sunday from 7:00 AM to 1:00 PM. Our flexible hours ensure you can always fit a workout into your schedule.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">How much is the membership?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Our memberships are designed to be affordable. The standard monthly plan is highly cost-effective, and we offer significant discounts for 3-month, 6-month, and annual commitments. Visit our Membership section for details.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">Is the gym beginner-friendly?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolutely! We pride ourselves on being a welcoming community. Our trainers are always available on the floor to guide you, correct your posture, and help you get familiar with the equipment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">Do you have a dedicated cardio area?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we have a separate, spacious cardio zone equipped with treadmills, ellipticals, and stationary bikes, ensuring you can do your cardio without feeling cramped next to the weight lifting area.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">Do you offer Personal Training and Workout Plans?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, our certified trainers offer 1-on-1 personal training sessions. Even without PT, we provide general guidance and can help draft a basic workout plan to get you started safely.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="accordion-title">Is there parking available?</span>
+                            <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, there is convenient street parking available right outside the gym near the Hawal Chowk and the Bajaj Service Centre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact (Two-column premium contact section) -->
+    <section class="contact section-padding bg-dark" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-details reveal-left">
+                    <h4 class="section-subtitle">GET IN TOUCH</h4>
+                    <h2 class="section-title">Start Your <span class="highlight-text">Journey</span></h2>
+                    <p class="contact-desc">Ready to join our community? Have a specific question? Drop us a message or visit us directly.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="ri-phone-fill"></i></div>
+                            <div>
+                                <h5>Call Us</h5>
+                                <a href="tel:+917006688165">+91 70066 88165</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="ri-whatsapp-fill"></i></div>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <a href="https://wa.me/917006688165" target="_blank">Chat with us</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="ri-time-fill"></i></div>
+                            <div>
+                                <h5>Business Hours</h5>
+                                <p>Mon-Sat: 6:00 AM - 10:00 PM<br>Sun: 7:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="ri-facebook-fill"></i></div>
+                            <div>
+                                <h5>Social</h5>
+                                <a href="https://www.facebook.com/p/Fitness-Generation-Gym-Hawal-Opposite-Bajaj-service-centre-sgr-100045573596523/" target="_blank">Follow on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glass-card reveal-right">
+                    <h3>Send a Message</h3>
+                    <!-- Production-ready UI, no backend integrated -->
+                    <form class="premium-form" id="contactForm" onsubmit="event.preventDefault(); alert('Form submission mock. Backend integration pending.');">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goal">Primary Goal</label>
+                            <select id="goal" name="goal" required>
+                                <option value="" disabled selected>Select your goal</option>
+                                <option value="weight-loss">Weight Loss</option>
+                                <option value="muscle-gain">Muscle Gain</option>
+                                <option value="general-fitness">General Fitness</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="How can we help you?"></textarea>
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-100 magnetic-btn">Submit Request <i class="ri-send-plane-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg-animation"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Fitness Generation Logo" class="footer-logo" onerror="this.style.display='none'">
+                    <h2>FITNESS <span class="highlight-text">GENERATION</span></h2>
+                    <p>Your trusted neighborhood gym in Hawal. Premium equipment, affordable memberships, and a supportive community.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#memberships">Memberships</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="ri-map-pin-line"></i> Hawal Chowk, Srinagar, J&K</p>
+                    <p><i class="ri-phone-line"></i> +91 70066 88165</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://wa.me/917006688165" class="magnetic-btn" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+                        <a href="https://www.facebook.com/p/Fitness-Generation-Gym-Hawal-Opposite-Bajaj-service-centre-sgr-100045573596523/" class="magnetic-btn" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fitness Generation Gym Hawal. All Rights Reserved.</p>
+                <div class="designer-tag">Built for Performance & Community</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top magnetic-btn" id="backToTop" aria-label="Back to Top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- External Libraries -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- GSAP Core & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
